@@ -1,0 +1,279 @@
+# ============================================
+#    VexorTroll
+#    by d2glaidee
+#    github.com/d2glaidee
+# ============================================
+#
+# [RU] Настройка
+# ─────────────────
+# cooldown         — пауза между использованиями (сек)
+# default-duration — длительность по умолчанию (сек)
+# enabled          — вкл/выкл (true / false)
+# duration         — длительность (сек, 0 = мгновенно)
+# min/max-interval — разброс частоты срабатывания (тики, 20 тиков = 1 сек)
+# interval         — фиксированная частота (тики)
+# radius/distance  — радиус / дистанция (блоки)
+# drop-chance      — шанс срабатывания (0.0 – 1.0)
+# strength/intensity — сила эффекта
+#
+# [EN] Configuration
+# ─────────────────
+# cooldown         — pause between uses (sec)
+# default-duration — default duration (sec)
+# enabled          — on/off (true / false)
+# duration         — duration (sec, 0 = instant)
+# min/max-interval — trigger frequency range (ticks, 20 ticks = 1 sec)
+# interval         — fixed frequency (ticks)
+# radius/distance  — radius / distance (blocks)
+# drop-chance      — trigger chance (0.0 – 1.0)
+# strength/intensity — effect power
+#
+# ============================================
+
+cooldown: 10
+default-duration: 30
+
+trolls:
+  inverted_controls:
+    enabled: true
+    duration: 25
+    display-name: "&cИнверсия управления" # Inverted Controls
+    icon: COMPASS
+    lore:
+      - "&7WASD наоборот" # WASD reversed
+
+  schizophrenia:
+    enabled: true
+    duration: 45
+    display-name: "&5Шизофрения" # Schizophrenia
+    icon: SPIDER_EYE
+    min-interval: 20
+    max-interval: 80
+    lore:
+      - "&7Звуки, глюки, галлюцинации" # Sounds, glitches, hallucinations
+
+  slippery_hands:
+    enabled: true
+    duration: 30
+    display-name: "&eСкользкие руки" # Slippery Hands
+    icon: SLIME_BALL
+    drop-chance: 0.35
+    lore:
+      - "&7Предметы выскальзывают из рук" # Items slip out of your hands
+
+  gravity_anomaly:
+    enabled: true
+    duration: 25
+    display-name: "&bАномалия гравитации" # Gravity Anomaly
+    icon: FEATHER
+    min-interval: 30
+    max-interval: 80
+    lore:
+      - "&7Гравитация сходит с ума" # Gravity goes crazy
+
+  phantom_blocks:
+    enabled: true
+    duration: 20
+    display-name: "&8Фантомные блоки" # Phantom Blocks
+    icon: BARRIER
+    radius: 5
+    interval: 25
+    lore:
+      - "&7Блоки-призраки вокруг" # Ghost blocks around you
+
+  stalker:
+    enabled: true
+    duration: 35
+    display-name: "&4Сталкер" # Stalker
+    icon: WITHER_SKELETON_SKULL
+    distance: 12
+    min-interval: 80
+    max-interval: 200
+    lore:
+      - "&7Кто-то стоит позади" # Someone is standing behind you
+
+  inventory_poltergeist:
+    enabled: true
+    duration: 30
+    display-name: "&6Полтергейст инвентаря" # Inventory Poltergeist
+    icon: CHEST
+    min-interval: 30
+    max-interval: 80
+    lore:
+      - "&7Вещи двигаются сами" # Items move on their own
+
+  sonic_boom:
+    enabled: true
+    duration: 25
+    display-name: "&3Звуковой удар" # Sonic Boom
+    icon: ECHO_SHARD
+    min-interval: 60
+    max-interval: 140
+    lore:
+      - "&7Ударная волна из ниоткуда" # Shockwave from nowhere
+
+  vertigo:
+    enabled: true
+    duration: 20
+    display-name: "&2Вертиго" # Vertigo
+    icon: POTION
+    lore:
+      - "&7Мир кружится" # The world is spinning
+
+  matrix_glitch:
+    enabled: true
+    duration: 20
+    display-name: "&aГлитч матрицы" # Matrix Glitch
+    icon: ENDER_PEARL
+    min-interval: 10
+    max-interval: 40
+    lore:
+      - "&7Микротелепортации" # Micro-teleportations
+
+  time_loop:
+    enabled: true
+    duration: 30
+    display-name: "&eПетля времени" # Time Loop
+    icon: RECOVERY_COMPASS
+    loop-seconds: 5
+    interval: 100
+    lore:
+      - "&7Возврат во времени" # Back in time
+
+  paranoia:
+    enabled: true
+    duration: 40
+    display-name: "&4Паранойя" # Paranoia
+    icon: SCULK_SENSOR
+    min-interval: 25
+    max-interval: 70
+    lore:
+      - "&7Шаги, дыхание, стуки" # Footsteps, breathing, knocking
+
+  phantom_touch:
+    enabled: true
+    duration: 25
+    display-name: "&dФантомное касание" # Phantom Touch
+    icon: PHANTOM_MEMBRANE
+    min-interval: 30
+    max-interval: 90
+    lore:
+      - "&7Кто-то толкает" # Someone is pushing you
+
+  void_glimpse:
+    enabled: true
+    duration: 0
+    display-name: "&0Взгляд в бездну" # Void Glimpse
+    icon: BLACK_CONCRETE
+    fall-duration: 60
+    lore:
+      - "&7Мгновение в пустоте" # A moment in the void
+
+  herobrine:
+    enabled: true
+    duration: 40
+    display-name: "&fHerobrine" # Herobrine
+    icon: REDSTONE_TORCH
+    min-interval: 100
+    max-interval: 250
+    lore:
+      - "&7Он наблюдает" # He is watching
+
+  ground_decay:
+    enabled: true
+    duration: 20
+    display-name: "&8Распад земли" # Ground Decay
+    icon: DIRT
+    radius: 3
+    min-interval: 20
+    max-interval: 60
+    lore:
+      - "&7Земля исчезает под ногами" # The ground vanishes beneath your feet
+
+  soul_drag:
+    enabled: true
+    duration: 25
+    display-name: "&5Хватка души" # Soul Drag
+    icon: SOUL_LANTERN
+    strength: 0.15
+    interval: 5
+    lore:
+      - "&7Что-то тянет" # Something is pulling you
+
+  night_terror:
+    enabled: true
+    duration: 30
+    display-name: "&8Ночной кошмар" # Night Terror
+    icon: INK_SAC
+    interval: 40
+    lore:
+      - "&7Тьма сгущается" # Darkness thickens
+
+  creeper_whisper:
+    enabled: true
+    duration: 30
+    display-name: "&aКриперный шепот" # Creeper Whisper
+    icon: CREEPER_HEAD
+    min-interval: 40
+    max-interval: 100
+    lore:
+      - "&7Шипение отовсюду" # Hissing from everywhere
+
+  doppelganger:
+    enabled: true
+    duration: 30
+    display-name: "&7Двойник" # Doppelganger
+    icon: ARMOR_STAND
+    min-interval: 80
+    max-interval: 180
+    lore:
+      - "&7Копия тебя рядом" # A copy of you nearby
+
+  earthquake:
+    enabled: true
+    duration: 15
+    display-name: "&6Землетрясение" # Earthquake
+    icon: PISTON
+    intensity: 0.08
+    interval: 2
+    lore:
+      - "&7Земля трясется" # The ground is shaking
+
+  world_corrupt:
+    enabled: true
+    duration: 15
+    display-name: "&4Порча мира" # World Corruption
+    icon: BEDROCK
+    radius: 8
+    lore:
+      - "&7Мир разрушается" # The world is falling apart
+
+  neck_snap:
+    enabled: true
+    duration: 25
+    display-name: "&cПоворот головы" # Neck Snap
+    icon: SPYGLASS
+    min-interval: 40
+    max-interval: 120
+    lore:
+      - "&7Голова поворачивается сама" # Your head turns on its own
+
+  desync:
+    enabled: true
+    duration: 25
+    display-name: "&3Десинхронизация" # Desync
+    icon: REPEATER
+    min-interval: 20
+    max-interval: 60
+    lore:
+      - "&7Ты тут или там?" # Are you here or there?
+
+  cursed_hotbar:
+    enabled: true
+    duration: 30
+    display-name: "&eПроклятый хотбар" # Cursed Hotbar
+    icon: BLAZE_ROD
+    min-interval: 15
+    max-interval: 50
+    lore:
+      - "&7Слот меняется сам" # The slot changes on its own

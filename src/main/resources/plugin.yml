@@ -1,0 +1,34 @@
+name: VexorTroll
+version: "${version}"
+main: me.d2glaidee.vexortroll.VexorTroll
+api-version: "1.21"
+author: d2glaidee
+website: github.com/d2glaidee
+description: Simple troll plugin
+
+commands:
+  troll:
+    description: Open troll GUI or reload config
+    usage: /troll [reload]
+    permission: vexortroll.use
+
+permissions:
+  vexortroll.*:
+    description: Full access
+    default: op
+    children:
+      vexortroll.use: true
+      vexortroll.menu: true
+      vexortroll.reload: true
+  vexortroll.use:
+    description: Open GUI
+    default: op
+  vexortroll.menu:
+    description: Interact with GUI
+    default: op
+  vexortroll.reload:
+    description: Reload config
+    default: op
+  vexortroll.bypass:
+    description: Cannot be trolled
+    default: false
