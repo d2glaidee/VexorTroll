@@ -16,7 +16,7 @@
 
 [![Paper](https://img.shields.io/badge/Paper-1.21+-232323?logo=papermc&logoColor=white)](https://papermc.io/)
 [![Gradle](https://img.shields.io/badge/Gradle-8.x-02303A?logo=gradle&logoColor=white)](https://gradle.org/)
-[![Java](https://img.shields.io/badge/Java-21+-ED8B00?logo=openjdk&logoColor=white)](https://openjdk.org/)
+[![Java](https://img.shields.io/badge/Java-25+-ED8B00?logo=openjdk&logoColor=white)](https://openjdk.org/)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21+-62B47A?logo=mojangstudios&logoColor=white)]()
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![GitHub](https://img.shields.io/badge/GitHub-d2glaidee-181717?logo=github)](https://github.com/d2glaidee)
